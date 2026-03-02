@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "cipher-api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "cipher-api.py"
+    }
+  ]
+}
